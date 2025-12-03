@@ -16,7 +16,7 @@
             <input type="number" v-model="ketto" id="soma2">
             <button @click="osszeg()">Összeadás</button>
         </div>
-        <div class="result" style="background-color: {{ backgroundColor }};">
+        <div class="result" :style="{ backgroundColor: backgroundcolor }">
             <h2>Eredmény: {{ message }}</h2>
         </div>
     </div>
