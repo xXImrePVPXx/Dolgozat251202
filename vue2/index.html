@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Számok Összeadás</h1>
+        <div class="container">
+            <label for="soma">Első szám:</label>
+            <input type="number" v-model="egy" id="soma">
+            <label for="soma2">Második szám:</label>
+            <input type="number" v-model="ketto" id="soma2">
+            <button @click="osszeg()">Összeadás</button>
+        </div>
+        <div class="result" style="background-color: {{ backgroundColor }};">
+            <h2>Eredmény: {{ message }}</h2>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
